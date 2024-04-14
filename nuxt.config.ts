@@ -11,5 +11,10 @@ export default defineNuxtConfig({
   ],
   imports: {
     dirs: ['stores']
+  }, 
+  routeRules: {
+    "/spa": {ssr: false},
+    "/static":{static: true},
+    "/swrl":{swr: true},
   }
 })
