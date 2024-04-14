@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   }, 
   routeRules: {
     "/spa": {ssr: false},
-    "/static":{static: true},
+    "/static":{isr: true},
     "/swr":{swr: true},
   }
 })
